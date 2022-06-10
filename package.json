@@ -1,0 +1,49 @@
+{
+  "name": "nodejs-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "nodemon --inspect src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dovansy/node_blog.git"
+  },
+  "keywords": [
+    "dovansy",
+    "blog",
+    "nodejs"
+  ],
+  "author": "dovansy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dovansy/node_blog/issues"
+  },
+  "homepage": "https://github.com/dovansy/node_blog#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.3.6"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.21",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.16",
+    "prettier": "^2.6.2"
+  },
+  "_moduleAliases": {
+    "@src": "./src",
+    "@controllers": "./src/controllers",
+    "@models": "./src/models",
+    "@utils": "./src/utils",
+    "@commons": "./src/common",
+    "@config": "./src/config",
+    "@routes": "./src/routes",
+    "@middlewares": "./src/middlewares"
+  }
+}
